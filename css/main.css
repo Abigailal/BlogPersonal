@@ -1,0 +1,336 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto+Slab:wght@400;700&family=Roboto:ital,wght@0,500;0,700;0,900;1,400&display=swap');
+
+/*Formatear estilos del navegador*/
+html {
+    font-size: 62.5%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+}
+.home-body {
+    position: fixed; /*para que ocupe solo el espacio de la pantalla y no haga scroll*/
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 15px;
+}
+.grid-container {
+    max-width: 980px;
+    margin: auto;
+}
+/*=================================================================CONTENEDOR HEADER*/
+header {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+}
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90px;
+}
+nav .nav-logo-container {
+    margin-left: 100px;
+}
+nav .nav-logo-container img {
+    width: 250px;
+    margin-top: 10px;
+}
+nav .profile-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 100px;
+}
+nav .profile-link .link {
+    width: 110px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 700px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 50px;
+}
+.profile-link .profile-home {
+    background-color: rgb(221, 229, 240);
+    color: black;
+}
+nav .profile-link .profile-home:hover {
+    color: rgb(14, 69, 83);
+    text-decoration: underline;
+}
+/*--------------------------------------------blogs.html*/
+.nav-bar {
+    background: linear-gradient(to right, rgb(36, 64, 107) 0%, rgb(37, 45, 78) 100%);
+
+}
+.profile-link .profile-blog {
+    color: white;
+}
+nav .profile-link .profile-blog:hover {
+    color: rgb(84, 173, 196);
+    text-decoration: underline;
+}
+
+/*=================================================================CONTENEDOR ICONS*/
+.icons-container {
+    position: absolute;
+    top: 25%;
+    width: 50px;
+}
+.icons-container .icons {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+}
+.icons-container .icons .icons-item {
+    color: #fff;
+    line-height: 1;
+    padding: 5px 6px;
+    background-color: #1e4275;
+    border-bottom-right-radius: 10px;
+}
+
+/*=================================================================CONTENEDOR MAIN*/
+.home-main {
+    background-image: url(../assets/img/wp7873902.png); /* Ubicación de la imagen */
+    background-size: cover; /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+    background-repeat: no-repeat; /* Para que la imagen de fondo no se repita */
+    background-position: center center; /* Para dejar la imagen de fondo centrada, vertical y horizontalmente */
+    background-attachment: fixed; /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+    background-color: #1e4275;/* Se muestra un color de fondo mientras se está cargando la imagen de fondo o si hay problemas para cargarla */
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+}  
+.home-main section{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    justify-items: center;
+    align-items: center;
+}
+.home-main-title {
+    font-size: 30px;
+    font-weight: 700px;
+    text-transform: uppercase;
+    letter-spacing: 10px; /*Espacio entre letras*/
+    color: #fff;
+    text-align: center; /*texto alineado*/
+    text-shadow: 0 0 10px #314a6d;
+    margin: 0 50px 0 50px;
+}
+.home-main-button{
+    background-color: rgb(221, 229, 240);
+    color: black;
+    width: 110px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 700px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 50px;
+}
+.home-main-button:hover {
+    text-decoration: underline;
+}
+/*--------------------------------------------blogs.html*/
+.blogs-main {
+    display: grid;
+    color:white;
+    background: rgb(48, 76, 122);
+}
+.blogs-news-container {
+    background: rgb(48, 76, 122);
+    padding: 0 50px 0px;
+    margin-top: 90px;
+}
+.blogs-main-news {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr;
+}
+.blogs-main-news h3 {
+    font-size: 20px;
+}
+.blogs-news-img-container {
+    grid-column: 1;
+    text-align: center;
+}
+.blogs-news-img-container img {
+    width: 70%;
+}
+.blogs-news-info-container h2 {
+    font-size: 30px;
+}
+.blogs-news-info-container {
+    grid-column: 2;
+    margin-top: 10%;
+    width: 80%;
+}
+.blogs-news-info-container p {
+    margin-bottom: 35px;
+}
+.blogs-posts-container {
+    padding: 30px 50px 40px;
+    background: linear-gradient(rgb(48, 76, 122) 0%, rgba(53, 53, 53, 1) 150px);
+    text-align: center;
+}
+.blogs-posts-container .title-blogspots {
+    border-bottom: 1px solid #cdd2da;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+.blogs-button {
+    padding: 10px 25px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    font-size: 12px;
+}
+
+.blogs-posts-container .posts-container {
+    display: inline-block;
+    padding: 10px;
+    max-width: 30%;
+    margin-bottom: 50px;
+}
+.blogs-posts-container .posts-container h3 {
+    text-align: center;
+    font-size: 17px;
+}
+.blogs-posts-container .posts-container img {
+    width: 90%;
+}
+.blogs-posts-container .posts-container p {
+    margin-bottom: 20px;
+}
+/*--------------------------------------------blog.html*/
+.blogpost-img-container {
+    padding: 90px 50px 40px;
+}
+.blogpost-img-container img {
+    width: 100%;
+}
+.blogpost-main-container {
+    padding: 0 50px 40px;
+    background: linear-gradient(rgb(48, 76, 122) 0%, rgba(53, 53, 53, 1) 150px);
+    color: white;
+}
+.blogpost-main-container h3 {
+    border-bottom: 1px solid #cdd2da;
+    padding-bottom: 20px;
+    margin: 0;
+}
+.blogpost-main-container article h1 {
+    font-size: 35px;
+}
+.contact-main-container {
+    width: 100%;
+    min-height: 250px;
+    background: linear-gradient(rgba(53, 53, 53, 1) 0%, rgb(48, 76, 122) 150px);
+    text-align: center;
+    padding-bottom: 50px;
+}
+.contact-main-container div {
+    display: inline-block;
+    width: 49.5%;
+    height: 100%;
+    color: white;
+}
+.contact-main-container div a {
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    color: white;
+}
+.contact-main-container .contact-left, .contact-right {
+    text-align: initial;
+    margin-top: 85px;
+}
+.contact-main-container img {
+    width: 100px;
+}
+/*--------------------------------------------perfil.html*/
+.profile-main-container {
+    padding: 100px 40px;
+    color: white;
+    background-color: #e6e9ed;
+    background:rgb(48, 76, 122);
+}
+.profile-main-container img {
+    width: 320px;
+    margin-right: 30px; 
+}
+.profile-main-container .profile-container {
+    display: flex;
+}
+.profile-main-proyects {
+    padding: 0 50px 40px;
+    color: white;
+    background: linear-gradient(rgb(48, 76, 122) 0%, rgba(53, 53, 53, 1) 150px);
+}
+.profile-main-proyects h3 {
+    border-bottom: 1px solid #cdd2da;
+    padding-bottom: 35px;
+    text-align: center;
+    margin: 0;
+}
+.proyects-main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.proyect-container {
+    padding: 20px 10px;
+}
+.proyect-container img {
+    width: 100%;
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+   
+}
+
+/*=================================================================CONTENEDOR FOOTER*/
+/*--------------------------------------------blogs.html*/
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(rgba(53, 53, 53, 1) 0%, rgb(48, 76, 122) 150px);
+    border-top: 5px solid rgb(39, 39, 39);
+    text-align: center;
+    align-items: center;
+}
+.icons-footer-container {
+    grid-column: 2;
+    text-align: end;
+    margin-right: 100px;
+}
+.icons-footer .icons-footer-item {
+    color: white;
+    margin-right: 10px;
+}
+.fot-blog {
+    background: linear-gradient( rgb(48, 76, 122) 0%, rgba(53, 53, 53, 1) 150px);
+    border-top: 5px solid rgb(39, 39, 39);
+    width: 100%;
+    height: 80px;
+    text-align: center;
+}
+footer p {
+    color: white;
+    margin-top: 30px;
+}
